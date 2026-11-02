@@ -104,6 +104,10 @@ Full notes for each version are on the [releases page](https://github.com/faiz03
 - A new first-run experience: a short introduction to the app, set up and sign in.
 - A Set done button on the workout notification.
 
+## Support Teras
+
+Teras is free. If you would like to support its development, you can [buy me a coffee](https://buymeacoffee.com/faizahmad) or use [DuitNow QR](support/README.md).
+
 ## Feedback
 
-Teras is in beta, so things may still change. If something does not work, or you have an idea, please [open an issue](https://github.com/faiz03-glicth/teras-releases/issues). Include your phone model and the app version, shown under Log out on Profile.
+Teras is in beta, so things may still change. If something does not work, or you have an idea, please [open an issue](https://github.com/faiz03-glicth/teras-releases/issues). For questions and ideas, use [Discussions](https://github.com/faiz03-glicth/teras-releases/discussions). Include your phone model and the app version, shown under Log out on Profile.
