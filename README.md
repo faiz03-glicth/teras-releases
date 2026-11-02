@@ -15,9 +15,9 @@
 </p>
 
 <p align="center">
-  <img src="screens/app-10.jpg" width="200" alt="Home">
-  <img src="screens/app-11.jpg" width="200" alt="Workout">
-  <img src="screens/app-01.jpg" width="200" alt="Logging a workout">
+  <img src="screens/home-dark.jpg" width="200" alt="Home, dark">
+  <img src="screens/workout.jpg" width="200" alt="Workout and routines">
+  <img src="screens/island-rest.jpg" width="200" alt="Workout in the Dynamic Island, resting">
 </p>
 
 ## Latest release
@@ -45,31 +45,31 @@ Updating keeps your data. Install the new version over the old one.
 
 <p>
   <img src="screens/f-log.jpg" width="200" alt="Logging a workout">
-  <img src="screens/app-03.jpg" width="200" alt="Empty workout">
-  <img src="screens/app-07.jpg" width="200" alt="Routine">
+  <img src="screens/empty-workout.jpg" width="200" alt="Empty workout">
+  <img src="screens/lock-screen.jpg" width="200" alt="Workout on the Lock Screen">
 </p>
 
 **See your training as a wave.** Every day you train fills a square on Home. A square gets darker when you lift more than the week before.
 
 <p>
+  <img src="screens/home-light.jpg" width="200" alt="Home, light">
+  <img src="screens/history.jpg" width="200" alt="Workout history">
   <img src="screens/f-wave.jpg" width="200" alt="Training wave">
-  <img src="screens/app-09.jpg" width="200" alt="Calendar">
-  <img src="screens/app-05.jpg" width="200" alt="History">
 </p>
 
 **Know which muscles you trained.** A body map shows the muscles you worked this week and how often. A spider chart shows which muscle groups are ahead and which are behind.
 
 <p>
-  <img src="screens/app-06.jpg" width="200" alt="Muscles this week">
+  <img src="screens/exercises.jpg" width="200" alt="Exercise library">
+  <img src="screens/exercise-detail.jpg" width="200" alt="Exercise detail">
   <img src="screens/f-spider.jpg" width="200" alt="Muscle balance">
-  <img src="screens/app-04.jpg" width="200" alt="Exercises">
 </p>
 
-**Track your body and records.** Log your bodyweight and follow your BMI and FFMI. Personal records are marked on the set that made them.
+**Track your body and records.** Log your bodyweight and follow your BMI and FFMI. Personal records are marked on the set that made them. Pick your look with the theme wheel: Gold or Grey, dark or light.
 
 <p>
   <img src="screens/f-ffmi.jpg" width="200" alt="Bodyweight, BMI and FFMI">
-  <img src="screens/app-08.jpg" width="200" alt="Profile">
+  <img src="screens/theme-wheel.jpg" width="200" alt="Theme wheel">
 </p>
 
 **Share a workout.** Turn a finished workout into a picture: the summary, your lifts or the muscles trained.
@@ -77,7 +77,6 @@ Updating keeps your data. Install the new version over the old one.
 <p>
   <img src="screens/f-share1.jpg" width="200" alt="Share, summary">
   <img src="screens/f-share2.jpg" width="200" alt="Share, lifts">
-  <img src="screens/app-12.jpg" width="200" alt="Share a workout">
 </p>
 
 **Works without a connection.** Every workout is saved on your phone first, so you can log in a gym with no signal. When you sign in, your workouts are backed up.
@@ -106,7 +105,16 @@ Full notes for each version are on the [releases page](https://github.com/faiz03
 
 ## Support Teras
 
-Teras is free. If you would like to support its development, you can [buy me a coffee](https://buymeacoffee.com/faizahmad) or use [DuitNow QR](support/README.md).
+Teras is free, with no ads, and it is built by one person. Your support goes straight into the app:
+
+- **Apple Developer membership** (US$99 a year), so iPhone users can install Teras without re-signing it every 7 days, and later from the App Store.
+- **Google Play** listing, so Android users get updates on their own.
+- **Servers** for backing up workouts and hosting the exercise demos.
+- **Time** to build what testers ask for, and to fix bugs faster.
+
+Any amount helps. Thank you.
+
+[Buy me a coffee](https://buymeacoffee.com/faizahmad) &nbsp;·&nbsp; [DuitNow QR (Malaysia)](support/README.md)
 
 ## Feedback
 
