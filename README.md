@@ -22,13 +22,22 @@
 
 ## Latest release
 
-**Teras Beta 0.4.0**, 2 November 2026
+**Teras Beta 0.5.0**, 8 November 2026
 
-- Pause a workout. Tap the clock to pause; the clock and the rest timer stop until you resume.
-- The workout notification shows the exercise you are on, your current set and the exercise picture.
-- On Android 16 and later, a running workout shows as a chip in the status bar.
+- A proper welcome: six short pages on first run, then set up your units, body and first day of the week.
+- A new Profile: cover photo, Edit profile, Settings, and a weekly chart (bars or a line) that opens a weekly report.
+- Edit body in one sheet: weight, height and body fat, with FFMI and lean mass on the card.
+- Share one exercise as a picture. Ticking a set and switching the chart are now instant.
 
-[Download 0.4.0](https://github.com/faiz03-glicth/teras-releases/releases/latest) · [All releases](https://github.com/faiz03-glicth/teras-releases/releases)
+[Download 0.5.0](https://github.com/faiz03-glicth/teras-releases/releases/latest) · [All releases](https://github.com/faiz03-glicth/teras-releases/releases)
+
+## First run
+
+Six pages and you're in: what Teras does, then set up your units, bodyweight, rest time and the day your week starts. Sign in to back up your workouts, or use Teras without an account.
+
+<p align="center">
+  <img src="screens/onboarding-flow.png" width="100%" alt="The onboarding flow: Welcome, four tour cards, Set up, Sign in and Welcome back">
+</p>
 
 ## Download
 
@@ -91,6 +100,7 @@ Updating keeps your data. Install the new version over the old one.
 
 | Version | Date | What changed |
 |---|---|---|
+| 0.5.0 | 8 Nov 2026 | New first run and Set up. New Profile with cover photo, Settings and a weekly report. Edit body. Share one exercise. Instant set ticks. |
 | 0.4.0 | 2 Nov 2026 | Pause a workout. The notification shows your current exercise and set. Android 16 status bar chip. |
 | 0.3.0 | 2 Nov 2026 | Exercise demos: a picture for every exercise, with an animation you can play. Version number on Profile. |
 | 0.2.0 | 1 Nov 2026 | Workout in the notification bar and on the iPhone Lock Screen. Rest alarm. First-run tour. |
@@ -100,8 +110,15 @@ Full notes for each version are on the [releases page](https://github.com/faiz03
 
 ## Coming next
 
-- A new first-run experience: a short introduction to the app, set up and sign in.
 - A Set done button on the workout notification.
+
+## The app icon
+
+A dumbbell in bronze on a dark tile, with *pucuk rebung*, the bamboo-shoot motif from songket weaving, woven over it. The same drawing makes the iPhone icon (dark, light and tinted), every Android launcher shape and the themed icon, the splash screen and the mark on shared pictures.
+
+<p align="center">
+  <img src="screens/app-icon-design.png" width="100%" alt="The Teras app icon: the master, on iPhone and Android home screens, the splash and the share card">
+</p>
 
 ## Support Teras
 
