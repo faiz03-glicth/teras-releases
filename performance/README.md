@@ -7,7 +7,8 @@ How smooth Teras runs, build by build. Each new build is compared with the last 
 **How it is measured.** On a real phone (Android 16, Mali-G57 GPU, 60 Hz screen), with release builds only. A script taps and scrolls the same way every time, and Android counts every frame it draws. Each figure is the median of 3 runs.
 
 - **Frame time (ms):** how long a frame took to draw. **p50** is the typical frame. **p90** and **p99** are the slow ones: 90% and 99% of frames came in under that time. Lower is better.
-- **Janky %:** the share of frames Android counted as janky. Lower is better. It swings by several points from one run to the next, so p90 is the steadier measure.
+- **Missed frames %:** the frames that really reached the screen late. This is the fairest measure of stutter you can see. Lower is better.
+- **Janky %:** Android's older count, which includes every frame over 16 ms even when it still arrived on time, so it reads much higher (30–40% on this phone). It swings by several points from one run to the next.
 - **Target:** p90 at most 14 ms, p99 at most 16.7 ms (one frame at 60 Hz), and janky at most 2%. No build meets it yet. These numbers show how far each build is from the target.
 
 ## 0.6.0 against 0.5.0
@@ -51,7 +52,7 @@ Measured on 9 November 2026, back to back on the same phone at 28–30 °C. To c
 | Chart switch | Janky | 18.55% | 15.15% | −3.4 pts | | ✅ |
 | Start-up | Cold start | 1,249 ms | 1,254 ms | +5 ms | +30 ms | ✅ |
 | App size | APK | 76.45 MB | 77.38 MB | +0.92 MB | +1 MB | ✅ |
-| Memory | Total, Home settled | not measured * | 207.2 MB | to come | +0 MB (Polygon) | ⏳ |
+| Memory | Total, Home settled | not measured * | 207.2 MB | see 0.6.0 | +0 MB (Polygon) | ✅ |
 
 **Result:** with the default Polygon body, the new features cost no smoothness. Slow frames are the same or faster on both screens, cold start is 5 ms slower, and the app is 0.92 MB bigger. All of these are within their allowances. Memory is still to be compared (* b74's only reading was taken before Home had settled, and b74 can no longer be installed over b75; 0.5.0's code will be rebuilt under a higher build number and measured).
 
@@ -175,9 +176,10 @@ Two test copies of b75, each with one thing taken out, measured in Dark on a coo
 
 Janky % for these runs is in the CSV files. b76's memory reading is not usable (Home had not settled). b77 read 201.7 MB total and 16.1 MB graphics.
 
-## Coming next
+## Since then
 
-- b78: a Simple look setting (no wallpaper, no soft shadows) for slower phones, shorter screen transitions, and Home's muscle map and training wave kept ready on the graphics chip.
-- Memory for 0.5.0's code on a settled Home, rebuilt under a higher build number.
+- b78 tried keeping Home's muscle map and training wave ready on the graphics chip; it saved nothing and was taken out (see the 0.6.0 section).
+- Memory for 0.5.0's code was measured on b79, the same code rebuilt; it is in the 0.6.0 section.
+- 0.6.0 (build 82) shipped with Simple look, the Body model, the sync label and the coffee key.
 
 Earlier runs on b56 to b63 used a different walk (it also opened Profile) or ran with Reduce Motion on, so they are left out of these comparisons.
