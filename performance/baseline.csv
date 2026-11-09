@@ -7,3 +7,7 @@ v70_polygon,total_pss_after_home,209212,KB,2026-11-09
 v70_polygon,graphics_pss_after_home,16044,KB,2026-11-09
 v70_polygon,cold_start_median_5,1347,ms,2026-11-09
 v70,apk_size,77377213,B,2026-11-09
+b74_v67code,cold_start_median_5,1249,ms,2026-11-09
+b75_v70code,cold_start_median_5,1254,ms,2026-11-09
+b75_v70code,total_pss_after_home,207170,KB,2026-11-09
+b75_v70code,graphics_pss_after_home,15324,KB,2026-11-09
