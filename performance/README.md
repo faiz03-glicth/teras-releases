@@ -132,9 +132,26 @@ Settings → Body model picks the figure drawn on the muscle maps. Detailed draw
 
 **Result:** Detailed costs about the same as Polygon. Cold start for Detailed is the median of 1,253, 1,251, 1,229, 1,268 and 1,282 ms.
 
+## Where the slow frames come from
+
+Two test copies of b75, each with one thing taken out, measured in Dark on a cool phone on 9 November 2026. They are test builds only, not releases.
+
+| Build | What was taken out | Home p90 / p99 | Chart switch p90 | Cold start |
+|---|---|---:|---:|---:|
+| b75 (Polygon) | nothing | 36 / 44 ms | 32 ms | 1,254 ms |
+| b76 | the songket wallpaper | 36 / 42 ms | 32 ms | 1,209 ms |
+| b77 | the soft shadows | 36 / 44 ms | 34 ms | 1,223 ms |
+
+**Finding:** neither the wallpaper nor the soft shadows explains the slow frames in Dark.
+- Dark draws no blurred shadows at all, and the wallpaper costs only about 0.7 ms of graphics time a frame.
+- The time goes on two things: preparing the drawing for each frame (about 8 ms) and the graphics chip drawing it (about 10.6 ms).
+- So the next fixes cut how much each frame has to draw.
+
+Janky % for these runs is in the CSV files. b76's memory reading is not usable (Home had not settled). b77 read 201.7 MB total and 16.1 MB graphics.
+
 ## Coming next
 
-- Two test builds that look for where the slow frames come from: b76 without the wallpaper, and b77 without blurred shadows.
+- b78: a Simple look setting (no wallpaper, no soft shadows) for slower phones, shorter screen transitions, and Home's muscle map and training wave kept ready on the graphics chip.
 - Memory for 0.5.0's code on a settled Home, rebuilt under a higher build number.
 
 Earlier runs on b56 to b63 used a different walk (it also opened Profile) or ran with Reduce Motion on, so they are left out of these comparisons.
