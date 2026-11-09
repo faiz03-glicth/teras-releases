@@ -14,3 +14,7 @@ b75_v70code,graphics_pss_after_home,15324,KB,2026-11-09
 b75_detailed,cold_start_median_5,1253,ms,2026-11-09
 b75_detailed,total_pss_after_home,207480,KB,2026-11-09
 b75_detailed,graphics_pss_after_home,15320,KB,2026-11-09
+b76_nowall,cold_start_median_5,1209,ms,2026-11-09
+b77_noshadow,cold_start_median_5,1223,ms,2026-11-09
+b77_noshadow,total_pss_after_home,201739,KB,2026-11-09
+b77_noshadow,graphics_pss_after_home,16060,KB,2026-11-09
