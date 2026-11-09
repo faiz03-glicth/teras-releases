@@ -111,9 +111,29 @@ Measured on 9 November 2026. Cold start is the median of 5 runs:
 
 Data: [baseline.csv](baseline.csv)
 
+## Polygon or Detailed body
+
+Settings → Body model picks the figure drawn on the muscle maps. Detailed draws a shaded anatomy picture instead of flat shapes, so it was measured on its own. The test used b75, Male, on a cool phone (28.8 → 28.7 °C), on 9 November 2026.
+
+<p align="center">
+  <img src="img/body-sheet-detailed.png" width="270" alt="Settings, Body model: Male or Female, Polygon or Detailed, with Male Detailed chosen">
+  <img src="img/body-home-detailed.png" width="270" alt="Home with the Detailed body under Muscles this week">
+</p>
+
+| Measure | Polygon | Detailed | Change | Allowed | |
+|---|---:|---:|---:|---:|---|
+| Home scroll p90 / p99 | 36 / 44 ms | 36 / 44 ms | 0 | +1 ms | ✅ |
+| Home scroll janky | 38.54% | 42.35% | +3.8 pts | | within the usual run-to-run swing |
+| Chart switch p90 | 32 ms | 32 ms | 0 | | ✅ |
+| Chart switch janky | 15.15% | 14.69% | −0.5 pts | | ✅ |
+| Cold start | 1,254 ms | 1,253 ms | −1 ms | +30 ms | ✅ |
+| Memory (total PSS) | 207.2 MB | 207.5 MB | +0.3 MB | +8 MB | ✅ |
+| Graphics memory | 15.3 MB | 15.3 MB | 0 | | ✅ |
+
+**Result:** Detailed costs about the same as Polygon. Cold start for Detailed is the median of 1,253, 1,251, 1,229, 1,268 and 1,282 ms.
+
 ## Coming next
 
-- The latest build with the **Detailed** body (the larger pictures; its memory allowance is +8 MB).
 - Two test builds that look for where the slow frames come from: b76 without the wallpaper, and b77 without blurred shadows.
 - Memory for 0.5.0's code on a settled Home, rebuilt under a higher build number.
 

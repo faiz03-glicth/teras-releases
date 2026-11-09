@@ -11,3 +11,6 @@ b74_v67code,cold_start_median_5,1249,ms,2026-11-09
 b75_v70code,cold_start_median_5,1254,ms,2026-11-09
 b75_v70code,total_pss_after_home,207170,KB,2026-11-09
 b75_v70code,graphics_pss_after_home,15324,KB,2026-11-09
+b75_detailed,cold_start_median_5,1253,ms,2026-11-09
+b75_detailed,total_pss_after_home,207480,KB,2026-11-09
+b75_detailed,graphics_pss_after_home,15320,KB,2026-11-09
