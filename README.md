@@ -22,14 +22,14 @@
 
 ## Latest release
 
-**Teras Beta 0.5.0**, 8 November 2026
+**Teras Beta 0.6.0**, 9 November 2026
 
-- A proper welcome: six short pages on first run, then set up your units, body and first day of the week.
-- A new Profile: cover photo, Edit profile, Settings, and a weekly chart (bars or a line) that opens a weekly report.
-- Edit body in one sheet: weight, height and body fat, with FFMI and lean mass on the card.
-- Share one exercise as a picture. Ticking a set and switching the chart are now instant.
+- Body model: pick male or female, Polygon or Detailed, for every muscle map in the app.
+- Simple look for slower phones, and a "Syncing…" label above the tab bar while your workouts sync.
+- Faster records, history and exercise list on long histories; shorter transitions on Android.
+- Buy me a coffee, on Android.
 
-[Download 0.5.0](https://github.com/faiz03-glicth/teras-releases/releases/latest) · [All releases](https://github.com/faiz03-glicth/teras-releases/releases)
+[Download 0.6.0](https://github.com/faiz03-glicth/teras-releases/releases/latest) · [All releases](https://github.com/faiz03-glicth/teras-releases/releases)
 
 ## First run
 
@@ -38,6 +38,15 @@ Six pages and you're in: what Teras does, then set up your units, bodyweight, re
 <p align="center">
   <img src="screens/onboarding-flow.png" width="100%" alt="The onboarding flow: Welcome, four tour cards, Set up, Sign in and Welcome back">
 </p>
+
+## Body models
+
+Choose the body your muscle maps are drawn on, in Settings → Body model. It shows on Home's muscles this week, the exercise filter and your share pictures.
+
+| | Polygon | Detailed |
+|---|:---:|:---:|
+| **Male** | <img src="screens/body-models/male-polygon.svg" height="260" alt="Male body, Polygon drawing"> | <img src="screens/body-models/male-detailed.png" height="260" alt="Male body, Detailed drawing"> |
+| **Female** | <img src="screens/body-models/female-polygon.svg" height="260" alt="Female body, Polygon drawing"> | <img src="screens/body-models/female-detailed.png" height="260" alt="Female body, Detailed drawing"> |
 
 ## Download
 
@@ -100,13 +109,14 @@ Updating keeps your data. Install the new version over the old one.
 
 | Version | Date | What changed |
 |---|---|---|
+| 0.6.0 | 9 Nov 2026 | Body model (male or female, Polygon or Detailed). Simple look. Syncing label. Faster records, history and exercise list. |
 | 0.5.0 | 8 Nov 2026 | New first run and Set up. New Profile with cover photo, Settings and a weekly report. Edit body. Share one exercise. Instant set ticks. |
 | 0.4.0 | 2 Nov 2026 | Pause a workout. The notification shows your current exercise and set. Android 16 status bar chip. |
 | 0.3.0 | 2 Nov 2026 | Exercise demos: a picture for every exercise, with an animation you can play. Version number on Profile. |
 | 0.2.0 | 1 Nov 2026 | Workout in the notification bar and on the iPhone Lock Screen. Rest alarm. First-run tour. |
 | 0.1.0 | 1 Nov 2026 | First public beta. Bahasa Melayu and English, the songket look and the theme wheel. |
 
-Full notes for each version are on the [releases page](https://github.com/faiz03-glicth/teras-releases/releases). How smooth each build runs, measured on a phone: [Performance](performance/README.md).
+Full notes for each version are on the [releases page](https://github.com/faiz03-glicth/teras-releases/releases). How smooth each build runs, measured on a phone: [Performance](performance/README.md). Theme designs not yet in the app: [Themes](themes/README.md).
 
 ## Coming next
 
