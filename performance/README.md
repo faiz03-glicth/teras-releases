@@ -25,9 +25,9 @@ Measured on 9 November 2026, back to back on the same phone at 28–30 °C. To c
 | Chart switch | Janky | 18.55% | 15.15% | −3.4 pts | | ✅ |
 | Start-up | Cold start | 1,249 ms | 1,254 ms | +5 ms | +30 ms | ✅ |
 | App size | APK | 76.45 MB | 77.38 MB | +0.92 MB | +1 MB | ✅ |
-| Memory | Total, Home settled | not usable * | 207.2 MB | to come | +0 MB (Polygon) | ⏳ |
+| Memory | Total, Home settled | not measured * | 207.2 MB | to come | +0 MB (Polygon) | ⏳ |
 
-**Result:** with the default Polygon body, the new features cost no smoothness. Slow frames are the same or faster on both screens, cold start is 5 ms slower, and the app is 0.92 MB bigger. All of these are within their allowances. Memory is still to be compared: b74's reading was taken before Home had settled (* its graphics memory read 39.6 MB, against about 15 MB once settled).
+**Result:** with the default Polygon body, the new features cost no smoothness. Slow frames are the same or faster on both screens, cold start is 5 ms slower, and the app is 0.92 MB bigger. All of these are within their allowances. Memory is still to be compared (* b74's only reading was taken before Home had settled, and b74 can no longer be installed over b75; 0.5.0's code will be rebuilt under a higher build number and measured).
 
 ## Home scroll
 
@@ -95,15 +95,15 @@ Data: [profile-switch.csv](profile-switch.csv)
 | Measure | 0.5.0 code (b74) | Latest (b75) | Change | Allowed change |
 |---|---:|---:|---:|---:|
 | Cold start | 1,249 ms | 1,254 ms | +5 ms | +30 ms |
-| Memory once Home settles (total PSS) | not usable * | 207.2 MB | to come | +8 MB (Detailed), +0 (Polygon) |
-| Graphics memory | not usable * | 15.3 MB | to come | |
+| Memory once Home settles (total PSS) | not measured * | 207.2 MB | to come | +8 MB (Detailed), +0 (Polygon) |
+| Graphics memory | not measured * | 15.3 MB | to come | |
 | APK | 76,453,848 B | 77,377,213 B | +923,365 B | +1 MB |
 
 Measured on 9 November 2026. Cold start is the median of 5 runs:
 - b74: 1,269, 1,247, 1,246, 1,256 and 1,249 ms.
 - b75: 1,254, 1,274, 1,273, 1,212 and 1,248 ms.
 
-\* b74's memory was read before Home had settled.
+\* b74's only memory reading was taken before Home had settled (graphics read 39.6 MB, against about 15 MB once settled), so it is not used.
 
 **Earlier readings.** These are not used for the comparison.
 - b67 (0.5.0): 203.1 MB total, 15.1 MB graphics, 1,266 ms cold start.
@@ -114,7 +114,7 @@ Data: [baseline.csv](baseline.csv)
 ## Coming next
 
 - The latest build with the **Detailed** body (the larger pictures; its memory allowance is +8 MB).
-- Memory for 0.5.0's code on a settled Home.
 - Two test builds that look for where the slow frames come from: b76 without the wallpaper, and b77 without blurred shadows.
+- Memory for 0.5.0's code on a settled Home, rebuilt under a higher build number.
 
 Earlier runs on b56 to b63 used a different walk (it also opened Profile) or ran with Reduce Motion on, so they are left out of these comparisons.
