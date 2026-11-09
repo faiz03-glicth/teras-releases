@@ -116,6 +116,12 @@ Full notes for each version are on the [releases page](https://github.com/faiz03
 
 A 24-second portrait video (1080 × 1920) in seven scenes: the intro, the training wave, logging a set, the muscle map, beating last week, the share card and the outro. It is made in code with [Remotion](https://www.remotion.dev); the source is in [`promo/`](promo).
 
+<p align="center">
+  <a href="screens/promo.mp4"><img src="screens/promo-frames.png" width="100%" alt="The seven scenes of the promo video: Teras, your week as one wave, log a set in one tap, see which muscles you hit, beat last week, share what you lifted, every set counts"></a>
+</p>
+
+<p align="center"><a href="screens/promo.mp4"><b>Watch the promo video</b></a> (MP4, 1.4 MB)</p>
+
 ```bash
 cd promo
 npm i
