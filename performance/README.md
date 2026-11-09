@@ -1,8 +1,8 @@
 # Performance
 
-**Published 9 November 2026.** Last updated 9 November 2026.
+**Published 9 November 2026.** Last updated 9 November 2026 (0.6.0).
 
-How smooth Teras runs, build by build. Each new build is compared with the last public one, **0.5.0 (build 67)**.
+How smooth Teras runs, build by build. Each new build is compared with the last public one. The latest release is **0.6.0 (build 82)**; it is compared with **0.5.0 (build 67)** below.
 
 **How it is measured.** On a real phone (Android 16, Mali-G57 GPU, 60 Hz screen), with release builds only. A script taps and scrolls the same way every time, and Android counts every frame it draws. Each figure is the median of 3 runs.
 
@@ -10,7 +10,33 @@ How smooth Teras runs, build by build. Each new build is compared with the last 
 - **Janky %:** the share of frames Android counted as janky. Lower is better. It swings by several points from one run to the next, so p90 is the steadier measure.
 - **Target:** p90 at most 14 ms, p99 at most 16.7 ms (one frame at 60 Hz), and janky at most 2%. No build meets it yet. These numbers show how far each build is from the target.
 
-## Summary: 0.5.0 against the latest test build (fair test)
+## 0.6.0 against 0.5.0
+
+Measured on 9 November 2026 on the same phone, at 23–29 °C. **b79** is 0.5.0's code rebuilt; **b81** is 0.6.0's code (the release, build 82, adds only crash reports and usage counts).
+
+New this round is **the walk** (`walk.csv`): one pass through most of the app. It goes Home, Profile, Home, Workout, then the exercise library: tap two muscles, scroll the list down and up, open an exercise and its share card. Back on Home it opens and closes the training wave, then starts an empty workout and discards it with the red key.
+
+It also adds **missed frames**: the frames that really reached the screen late. Android's older "janky" count includes every frame over 16 ms, even those that still arrived on time, so it reads 30–40% on this phone while the missed frames are 2–6%.
+
+| Test | Measure | 0.5.0 code (b79) | 0.6.0 code (b81) | |
+|---|---|---:|---:|---|
+| The walk | Missed frames | 5.79% | 5.90% | ✅ same, within run-to-run noise |
+| The walk | p99 frame | 77 ms | 81 ms | ✅ same range (77–85 ms both) |
+| Home scroll | p90 / p99 frame | 36 / 44 ms | 36–42 / 42–44 ms | ✅ |
+| Chart switch | Missed frames | 3.2–3.7% | 3.5–4.0% | ✅ |
+| Start-up | Cold start | 1,200 ms | 1,182 ms | ✅ 18 ms sooner |
+| App size | APK | 76.45 MB | 77.39 MB | ✅ +0.94 MB (the Detailed body figures) |
+| Memory | Graphics, Home settled | 39.4 MB | 40.4 MB | ✅ no growth |
+
+**Result:** 0.6.0 is as smooth as 0.5.0 while adding the Body model, Simple look, the sync label and the coffee key, and it starts a little sooner.
+
+**About memory.** The graphics reading lands near 15 MB or near 40 MB depending on the state of Android's GPU cache, not on the build: 0.5.0's code read 39 MB in one run and 15 MB in another. About 11 MB of it is marked purgeable, which Android frees when memory is needed. Compare builds within the same state only.
+
+**What was tried and taken out.** Turning the wallpaper off saved about 0.7 ms a frame (b76). Turning soft shadows off changed nothing in Dark, which has none (b77). Caching Home's muscle map and wave as GPU textures saved nothing (b78). The cost is the phone drawing a busy screen each frame, not any one effect.
+
+**Database.** On three heavy years of training (627 workouts, 15,048 sets), timed on a computer: Profile's records 37 → 14 ms, the library's Recent list 21 → 1 ms, and history and the running-workout check no longer read every workout. Expect a phone to be several times slower, so these were visible pauses before.
+
+## Earlier: 0.5.0 against test build b75 (fair test)
 
 Measured on 9 November 2026, back to back on the same phone at 28–30 °C. To compare like with like, both versions were rebuilt and measured together:
 

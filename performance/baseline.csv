@@ -18,3 +18,16 @@ b76_nowall,cold_start_median_5,1209,ms,2026-11-09
 b77_noshadow,cold_start_median_5,1223,ms,2026-11-09
 b77_noshadow,total_pss_after_home,201739,KB,2026-11-09
 b77_noshadow,graphics_pss_after_home,16060,KB,2026-11-09
+b78_cached_cards,total_pss_after_home,200538,KB,2026-11-09
+b78_cached_cards,graphics_pss_after_home,16328,KB,2026-11-09
+b78_cached_cards,cold_start_median_5,1235,ms,2026-11-09
+b79_v67code,total_pss_after_home,224393,KB,2026-11-09
+b79_v67code,graphics_pss_after_home,39366,KB,2026-11-09
+b79_v67code,cold_start_median_5,1200,ms,2026-11-09
+b80,total_pss_after_home,200573,KB,2026-11-09
+b80,graphics_pss_after_home,15296,KB,2026-11-09
+b80,cold_start_median_5,1186,ms,2026-11-09
+b81_0.6.0code,total_pss_after_home,228359,KB,2026-11-09
+b81_0.6.0code,graphics_pss_after_home,40366,KB,2026-11-09
+b81_0.6.0code,cold_start_median_5,1182,ms,2026-11-09
+v82,apk_size,77385997,B,2026-11-09
