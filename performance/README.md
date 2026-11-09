@@ -1,5 +1,7 @@
 # Performance
 
+**Published 9 November 2026.** Last updated 9 November 2026.
+
 How smooth Teras runs, build by build. Each new build is compared with the last public one, **0.5.0 (build 67)**.
 
 **How it is measured.** On a real phone (Android 16, Mali-G57 GPU, 60 Hz screen), with release builds only. A script taps and scrolls the same way every time, and Android counts every frame it draws. Each figure is the median of 3 runs.
@@ -10,7 +12,7 @@ How smooth Teras runs, build by build. Each new build is compared with the last 
 
 ## Summary: 0.5.0 against the latest test build
 
-The latest test build is **build 70**, which adds the body model setting and the coffee key. Its body model is the default, Male · Polygon.
+Measured on 9 November 2026. The latest test build is **build 70**, which adds the body model setting and the coffee key. Its body model is the default, Male · Polygon.
 
 | Test | Measure | 0.5.0 (b67) | b70 | Change | Allowed |
 |---|---|---:|---:|---:|---:|
@@ -37,10 +39,10 @@ xychart-beta
 
 First bar of each pair: 0.5.0 (b67). Second: b70.
 
-| Build | Janky % | p50 | p90 | p99 | Frames |
-|---|---:|---:|---:|---:|---:|
-| b67 (0.5.0) | 35.94 | 21 | 36 | 44 | 803 |
-| b70 (Polygon) | 38.51 | 21 | 36 | 48 | 940 |
+| Build | Measured | Janky % | p50 | p90 | p99 | Frames |
+|---|---|---:|---:|---:|---:|---:|
+| b67 (0.5.0) | 9 Nov 2026 | 35.94 | 21 | 36 | 44 | 803 |
+| b70 (Polygon) | 9 Nov 2026 | 38.51 | 21 | 36 | 48 | 940 |
 
 Data: [home-scroll.csv](home-scroll.csv)
 
@@ -67,12 +69,12 @@ xychart-beta
 
 The line is the 14 ms target.
 
-| Build | Janky % | p50 | p90 | p99 | Frames |
-|---|---:|---:|---:|---:|---:|
-| b60 | 17.3 | 22 | 32 | 38 | 1,006 |
-| b63 | 17.85 | 22 | 34 | 38 | 997 |
-| b67 (0.5.0) | 10.77 | 20 | 24 | 38 | 986 |
-| b70 | not measured yet | | | | |
+| Build | Measured | Janky % | p50 | p90 | p99 | Frames |
+|---|---|---:|---:|---:|---:|---:|
+| b60 | 8 Nov 2026 | 17.3 | 22 | 32 | 38 | 1,006 |
+| b63 | 8 Nov 2026 | 17.85 | 22 | 34 | 38 | 997 |
+| b67 (0.5.0) | 9 Nov 2026 | 10.77 | 20 | 24 | 38 | 986 |
+| b70 | not measured yet | | | | | |
 
 0.5.0 made the chart switch draw at once: about 40% fewer janky frames than b63, and its slow frames are 10 ms faster.
 
@@ -87,7 +89,7 @@ Data: [profile-switch.csv](profile-switch.csv)
 | Cold start | 1,266 ms | not measured yet | +30 ms |
 | APK | 76,453,848 B | 77,377,213 B | +1 MB |
 
-Cold start is the median of 5 runs: 1,281, 1,297, 1,246, 1,243 and 1,266 ms.
+Measured on 9 November 2026. Cold start is the median of 5 runs: 1,281, 1,297, 1,246, 1,243 and 1,266 ms.
 
 Data: [baseline.csv](baseline.csv)
 
