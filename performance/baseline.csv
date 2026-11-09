@@ -1,0 +1,6 @@
+build,measure,value,unit
+v67,total_pss_after_home,203054,KB
+v67,graphics_pss_after_home,15060,KB
+v67,cold_start_median_5,1266,ms
+v67,apk_size,76453848,B
+v70,apk_size,77377213,B
