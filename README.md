@@ -112,6 +112,17 @@ Full notes for each version are on the [releases page](https://github.com/faiz03
 
 - A Set done button on the workout notification.
 
+## Promo video
+
+A 24-second portrait video (1080 × 1920) in seven scenes: the intro, the training wave, logging a set, the muscle map, beating last week, the share card and the outro. It is made in code with [Remotion](https://www.remotion.dev); the source is in [`promo/`](promo).
+
+```bash
+cd promo
+npm i
+npx remotion studio                 # preview in the browser
+npx remotion render TerasPromo      # export to out/TerasPromo.mp4
+```
+
 ## The app icon
 
 A dumbbell in bronze on a dark tile, with *pucuk rebung*, the bamboo-shoot motif from songket weaving, woven over it. The same drawing makes the iPhone icon (dark, light and tinted), every Android launcher shape and the themed icon, the splash screen and the mark on shared pictures.
