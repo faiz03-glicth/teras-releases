@@ -3,4 +3,7 @@ v67,total_pss_after_home,203054,KB,2026-11-09
 v67,graphics_pss_after_home,15060,KB,2026-11-09
 v67,cold_start_median_5,1266,ms,2026-11-09
 v67,apk_size,76453848,B,2026-11-09
+v70_polygon,total_pss_after_home,209212,KB,2026-11-09
+v70_polygon,graphics_pss_after_home,16044,KB,2026-11-09
+v70_polygon,cold_start_median_5,1347,ms,2026-11-09
 v70,apk_size,77377213,B,2026-11-09
