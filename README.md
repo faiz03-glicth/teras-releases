@@ -22,14 +22,14 @@
 
 ## Latest release
 
-**Teras Beta 0.6.0**, 9 November 2026
+**Teras Beta 0.6.3**, 13 November 2026
 
-- Body model: pick male or female, Polygon or Detailed, for every muscle map in the app.
-- Simple look for slower phones, and a "Syncing…" label above the tab bar while your workouts sync.
-- Faster records, history and exercise list on long histories; shorter transitions on Android.
-- Buy me a coffee, on Android.
+- The version on Profile now matches the download: a 0.6.3 build reports 0.6.3.
+- Google sign-in works again, with the Google screen saying "Sign in to Teras".
+- Workout sync stops waiting after 30 seconds, and it cancels when you leave the app or go offline.
+- Teras sends no crash reports or usage counts; everything stays on your phone.
 
-[Download 0.6.0](https://github.com/faiz03-glicth/teras-releases/releases/latest) · [All releases](https://github.com/faiz03-glicth/teras-releases/releases)
+[Download 0.6.3](https://github.com/faiz03-glicth/teras-releases/releases/latest) · [All releases](https://github.com/faiz03-glicth/teras-releases/releases)
 
 ## First run
 
@@ -109,6 +109,8 @@ Updating keeps your data. Install the new version over the old one.
 
 | Version | Date | What changed |
 |---|---|---|
+| 0.6.3 | 13 Nov 2026 | Profile shows the real version. Google sign-in fix. Sync times out after 30 seconds and cancels in the background. No telemetry. |
+| 0.6.1 | 10 Nov 2026 | Google sign-in fix. Profile still showed 0.6.0. |
 | 0.6.0 | 9 Nov 2026 | Body model (male or female, Polygon or Detailed). Simple look. Syncing label. Faster records, history and exercise list. |
 | 0.5.0 | 8 Nov 2026 | New first run and Set up. New Profile with cover photo, Settings and a weekly report. Edit body. Share one exercise. Instant set ticks. |
 | 0.4.0 | 2 Nov 2026 | Pause a workout. The notification shows your current exercise and set. Android 16 status bar chip. |
