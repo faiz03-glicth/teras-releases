@@ -118,7 +118,7 @@ Updating keeps your data. Install the new version over the old one.
 | 0.2.0 | 1 Nov 2026 | Workout in the notification bar and on the iPhone Lock Screen. Rest alarm. First-run tour. |
 | 0.1.0 | 1 Nov 2026 | First public beta. Bahasa Melayu and English, the songket look and the theme wheel. |
 
-Full notes for each version are on the [releases page](https://github.com/faiz03-glicth/teras-releases/releases). How smooth each build runs, measured on a phone: [Performance](performance/README.md). Theme designs not yet in the app: [Themes](themes/README.md).
+Full notes for each version are on the [releases page](https://github.com/faiz03-glicth/teras-releases/releases). Every feature and the version that brought it: [Features](feature/README.md). How smooth each build runs, measured on a phone: [Performance](performance/README.md). Theme designs not yet in the app: [Themes](themes/README.md).
 
 ## Coming next
 
