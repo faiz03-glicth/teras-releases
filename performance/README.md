@@ -1,6 +1,33 @@
 # Performance
 
-**Published 9 November 2026.** Last updated 9 November 2026 (0.6.0).
+**Published 9 November 2026.** Last updated 21 November 2026 (0.7.0).
+
+## 0.7.0: stress tests
+
+New this round: **stress walks** on six months of training (150 seeded workouts), each pushing one screen
+hard. Same phone, release test builds. **b92** is before the fixes below; **b93** has the search fix. Janky is
+Android's count (frames over 16 ms); each walk is one run, so treat small changes as noise.
+
+| Walk | What it does | Measure | b92 | b93 | |
+|---|---|---|---:|---:|---|
+| Search | types "bench press" and "squat" three times, fast | Janky / p99 frame | 28.4% / 105 ms | 26.0% / 69 ms | ✅ worst frame −36 ms |
+| Opening screens | library, two exercises, a routine | Janky / p99 frame | 11.3% / 77 ms | 10.0% / 57 ms | ✅ |
+| The wave | flings the six-month wave | Janky / p99 frame | 7.4% / 200 ms | 3.5% / 42 ms | ✅ the 200 ms hitch is gone |
+| Records | scrolls Profile's records | Janky / p90 frame | 5.2% / 36 ms | 5.0% / 23 ms | ✅ |
+| Home feed | Show more to six months, then 160 flings | Janky / p90 frame | 3.4% / 36 ms | not rerun | ✅ smooth with 186 cards |
+| Start-up | cold start, 5 runs | Time | 1,247–1,312 ms | 1,076–1,148 ms | ✅ |
+
+**What changed.** Typing in search used to rebuild every row on screen for every letter (about 90 ms each);
+the list now follows once typing pauses, and the body and muscle chips above it no longer redraw at all while
+typing (in 0.7.0, b94). The Home feed shows 20 workouts at a time and keeps one pool of recycled cards, so
+Show more adds cards without rebuilding the ones on screen.
+
+**A lesson in measuring.** The same b93 first measured 33–48% janky on every screen, including ones whose code
+had not changed. The phone was at 17% battery and slowing its own GPU (10–12 ms a frame instead of 7). All
+figures above were taken at 40% or more.
+
+**Still to do.** The keyboard itself costs up to 116 ms on a fast key press, and opening an exercise still
+spends 40–60 ms building the screen during the slide. The big workout (50 sets) is measured next.
 
 How smooth Teras runs, build by build. Each new build is compared with the last public one. The latest release is **0.6.0 (build 82)**; it is compared with **0.5.0 (build 67)** below.
 
