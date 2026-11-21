@@ -36,6 +36,11 @@ Last updated 21 November 2026 (0.7.0).
 | Pick days from the wave: tap a month for its card, or hold and slide to a day | 0.7.0 |
 | Show more on the workout feed: 20 at a time, back to six months | 0.7.0 |
 
+<p>
+  <img src="shots/home-070.jpg" width="240" alt="Home with the training wave, 0.7.0">
+  <img src="shots/month-card-070.jpg" width="240" alt="Month card picked from the wave, 0.7.0">
+</p>
+
 ## Profile and records
 
 | Feature | Since |
@@ -47,6 +52,10 @@ Last updated 21 November 2026 (0.7.0).
 | Version on Profile | 0.3.0 |
 | Plain cover, status strip; Following, Followers and Likes row | 0.7.0 |
 | Build number under the version in Settings | 0.7.0 |
+
+<p>
+  <img src="shots/profile-070.jpg" width="240" alt="The new Profile, 0.7.0">
+</p>
 
 ## Sharing
 
