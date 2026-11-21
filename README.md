@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/faiz03-glicth/teras-releases/releases/latest"><b>Download the latest beta</b></a>
+  <a href="https://github.com/faiz03-glicth/teras-releases/releases/tag/prod-v0.1.7"><b>Download Teras 0.1.7 (Prod)</b></a>
   &nbsp;·&nbsp; Android and iPhone &nbsp;·&nbsp; Bahasa Melayu and English
 </p>
 
@@ -22,14 +22,21 @@
 
 ## Latest release
 
-**Teras Beta 0.7.0**, 21 November 2026
+**Teras 0.1.7 (build 5), Prod**, 21 November 2026
 
-- Pick days from the training wave: tap a month for its card, or hold and slide to a day.
-- Show more on Home loads your workouts 20 at a time, six months back.
-- Smoother: exercise search, the wave (worst frame 200 ms to 42 ms) and a 1.1 s cold start.
-- New Profile look, and the build number in Settings.
+- Teras has its own sign-in: sign in once with Google or Apple.
+- Smoother exercise search, and Bahasa Melayu fixes on the month card.
+- Needs Android 8 or later.
 
-[Download 0.7.0](https://github.com/faiz03-glicth/teras-releases/releases/latest) · [All releases](https://github.com/faiz03-glicth/teras-releases/releases)
+[Download Teras 0.1.7](https://github.com/faiz03-glicth/teras-releases/releases/tag/prod-v0.1.7) · [Prod history](prod/README.md) · [All releases](https://github.com/faiz03-glicth/teras-releases/releases)
+
+### Prod or Sandbox?
+
+**Use Prod.** It is the stable app, and every Prod build has run on Sandbox first.
+**SandBoxTeras** gets new features first and may break; try it if you like ([Sandbox history](sandbox/README.md)).
+The two are separate apps, and your workouts do not move between them yet. That is being worked on.
+
+If Teras helps your training, you can support it: [Buy me a coffee](https://buymeacoffee.com/faizahmad).
 
 ## First run
 
