@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/faiz03-glicth/teras-releases/releases/tag/prod-v0.1.7"><b>Download Teras 0.1.7 (Prod)</b></a>
+  <a href="https://github.com/faiz03-glicth/teras-releases/releases/tag/prod-v0.1.8"><b>Download Teras 0.1.8 (Prod)</b></a>
   &nbsp;·&nbsp; Android and iPhone &nbsp;·&nbsp; Bahasa Melayu and English
 </p>
 
@@ -22,13 +22,15 @@
 
 ## Latest release
 
-**Teras 0.1.7 (build 5), Prod**, 21 November 2026
+**Teras 0.1.8 (build 6), Prod**, 24 November 2026
 
-- Teras has its own sign-in: sign in once with Google or Apple.
-- Smoother exercise search, and Bahasa Melayu fixes on the month card.
-- Needs Android 8 or later.
+- Supersets, drop sets and pyramids; weight per hand and bodyweight sets; hold to reorder.
+- History Workout with search, and repeat any past workout.
+- Import from Hevy, Strong or FitNotes; export and back up your data.
+- Training stats: estimated 1RM, hard sets, recovery, bodyweight trend and goal.
+- 53 new exercises, Smith machine and BOSU ball.
 
-[Download Teras 0.1.7](https://github.com/faiz03-glicth/teras-releases/releases/tag/prod-v0.1.7) · [Prod history](prod/README.md) · [All releases](https://github.com/faiz03-glicth/teras-releases/releases)
+[Download Teras 0.1.8](https://github.com/faiz03-glicth/teras-releases/releases/tag/prod-v0.1.8) · [Prod history](prod/README.md) · [All releases](https://github.com/faiz03-glicth/teras-releases/releases)
 
 ### Prod or Sandbox?
 
@@ -116,6 +118,7 @@ Updating keeps your data. Install the new version over the old one.
 
 | Version | Date | What changed |
 |---|---|---|
+| 0.7.2 (Prod 0.1.8) | 24 Nov 2026 | Supersets, drop sets and pyramids. Weight per hand, bodyweight sets, hold to reorder, rest timer from the clock. History Workout with search and repeat. Import from Hevy, Strong, FitNotes; export and backup. Training stats. Share picture editing. 53 new exercises. Rest alarm at full volume. |
 | 0.7.0 | 21 Nov 2026 | Pick days from the wave. Show more on Home. Smoother search and wave, faster cold start. New Profile look. Build number in Settings. |
 | 0.6.3 | 13 Nov 2026 | Profile shows the real version. Google sign-in fix. Sync times out after 30 seconds and cancels in the background. No telemetry. |
 | 0.6.1 | 10 Nov 2026 | Google sign-in fix. Profile still showed 0.6.0. |

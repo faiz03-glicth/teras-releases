@@ -10,6 +10,14 @@ Releases: tags starting with `prod-` (for example `prod-v0.1.7`) on the [release
 
 ## History
 
+### 0.1.8 (build 6), 24 November 2026
+Everything from SandBoxTeras 0.7.2:
+- Live workout: supersets, drop sets and pyramids (spotted for you, or made from the menu), weight per hand, bodyweight sets, hold to reorder, rest timer from the clock.
+- History Workout with search; repeat any past workout; save a workout as a routine.
+- Import from Hevy, Strong or FitNotes; export CSV, back up and restore.
+- Training stats: estimated 1RM, hard sets, recovery, bodyweight trend and goal, effort per set.
+- Edit share pictures; 53 new exercises with Smith machine and BOSU ball; rest alarm at full volume.
+
 ### 0.1.7 (build 5), 21 November 2026
 The first Prod release, with everything from SandBoxTeras 0.7.1:
 - Teras has its own sign-in with Google or Apple.

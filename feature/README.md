@@ -1,7 +1,7 @@
 # Features
 
 Everything Teras does, by area, and the version that brought it. Updated with every release.
-Last updated 21 November 2026 (0.7.0).
+Last updated 24 November 2026 (0.7.2).
 
 ## Logging a workout
 
@@ -16,6 +16,12 @@ Last updated 21 November 2026 (0.7.0).
 | Instant set ticks | 0.5.0 |
 | A soft green tick only once a set is done; centred stats | 0.7.0 |
 | Saved on your phone first: log with no signal | 0.1.0 |
+| Supersets, drop sets and pyramids: spotted as you train, or made from the exercise menu | 0.7.2 |
+| Weight per hand or arm; bodyweight sets (empty KG = BW) | 0.7.2 |
+| Hold a card to reorder; hold the clock to set rest for one exercise or all | 0.7.2 |
+| History Workout with search, and repeat any past workout | 0.7.2 |
+| Save a finished workout as a routine; volume over the last 6 times | 0.7.2 |
+| Rate a set's effort (reps left) | 0.7.2 |
 
 ## Exercises
 
@@ -26,6 +32,7 @@ Last updated 21 November 2026 (0.7.0).
 | Filter by muscle on the body, or by equipment | 0.1.0 |
 | Faster exercise list | 0.6.0 |
 | Smoother search: the list follows when you pause typing | 0.7.0 |
+| 53 new exercises, 48 extra search names, Smith machine and BOSU ball | 0.7.2 |
 
 ## Home and the training wave
 
@@ -56,6 +63,8 @@ Last updated 21 November 2026 (0.7.0).
 <p>
   <img src="shots/profile-070.jpg" width="240" alt="The new Profile, 0.7.0">
 </p>
+| Estimated 1RM, strength and hard sets; bodyweight trend and goal | 0.7.2 |
+| Recovery on Home | 0.7.2 |
 
 ## Sharing
 
@@ -64,6 +73,7 @@ Last updated 21 November 2026 (0.7.0).
 | Share a workout as a picture: summary, lifts or muscles | 0.1.0 |
 | Share one exercise | 0.5.0 |
 | Clean titles: no clipped g or y, no stray dot | 0.7.0 |
+| Edit share pictures: fonts, colours and which numbers show | 0.7.2 |
 
 ## Look
 
@@ -91,3 +101,5 @@ Last updated 21 November 2026 (0.7.0).
 | Syncing label | 0.6.0 |
 | Sync stops after 30 seconds and cancels in the background | 0.6.3 |
 | No telemetry: no crash reports or usage counts | 0.6.3 |
+| Import from Hevy, Strong or FitNotes; export CSV, back up and restore | 0.7.2 |
+
